@@ -1,8 +1,5 @@
 body{
-    background-color: black;
-    color: white;
-    margin: 0; /* Remove default margin on the body */
-    padding: 0; /* Remove default padding */
+    background-color: black !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,9 +9,10 @@ body{
 
 .box-wrapper{
     height: auto;
+    color: white;
     width: 100%;
-    border: 2px solid white; /* 2px thick, solid black border */
-    padding: 20px; /* Optional: adds space inside the box */
+    border: 2px solid white; 
+    padding: 20px; 
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
@@ -39,13 +37,3 @@ img{
 }
 
 
-h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    
-}
-
-h5 {
-    font-size: 1.2rem;
-    
-}

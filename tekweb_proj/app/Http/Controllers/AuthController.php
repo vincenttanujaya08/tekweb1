@@ -47,6 +47,6 @@ class AuthController extends Controller
         // Clear the session
         session()->forget('username');
         // Redirect to login page
-        return redirect()->route('loginPage');
+        return redirect()->route('homePage');
     }
 }

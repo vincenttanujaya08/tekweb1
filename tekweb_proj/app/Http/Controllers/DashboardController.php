@@ -13,7 +13,7 @@ class DashboardController extends Controller
         if (session('username')) {
             $username = session('username'); // Mengambil data dari session
             // Menampilkan tampilan dashboard dengan data yang dibawa
-            return view('dashboard', compact('username'));
+            return view('main/dashboard', compact('username'));
         }
         return redirect()->back()->withErrors(['error' => 'Login First to Access Dashboard']);
        

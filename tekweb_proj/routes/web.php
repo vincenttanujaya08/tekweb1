@@ -10,14 +10,14 @@ Route::get('/', function () {
         return redirect()->route('dashboard');
     }
     return view('home/homePage');
-})->name('home');
+})->name('homePage');
 
 
-Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::get('/login/loginPage', [AuthController::class, 'showLoginForm'])->name('login');
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/main/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('/login/loginPage', [AuthController::class, 'login']);
 
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
