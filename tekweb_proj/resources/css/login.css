@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0; /* Remove default margin on the body */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.box-wrapper{
+    height: auto;
+    width: 100%;
+    border: 2px solid white; /* 2px thick, solid black border */
+    padding: 20px; /* Optional: adds space inside the box */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .left{
+    text-align: center;
+}
+
+.wrapper .right{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 500px;
+    height: 700px;
+    object-fit: contain;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+h5 {
+    font-size: 1.2rem;
+    
+}
